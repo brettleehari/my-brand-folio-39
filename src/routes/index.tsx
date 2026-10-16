@@ -79,6 +79,25 @@ function Index() {
         </div>
       </Section>
 
+      <Section label="Speaking">
+        <div className="grid gap-6 md:grid-cols-2">
+          {speaking.map((t) => (
+            <a key={t.href} href={t.href} {...ext} className="group flex flex-col overflow-hidden rounded-lg border bg-card">
+              {t.video ? <img src={`https://i.ytimg.com/vi/${t.video}/hqdefault.jpg`} alt={t.title} loading="lazy" className="aspect-video w-full object-cover" /> : (
+                <div className="flex aspect-video w-full flex-col justify-end bg-primary p-7 text-primary-foreground">
+                  <span className="font-display text-5xl font-bold text-accent">AI</span>
+                  <span className="mt-2 font-display text-2xl font-bold leading-tight">The Gold Rush, seen up close.</span>
+                </div>
+              )}
+              <div className="p-6">
+                <p className="text-xs font-medium uppercase tracking-wider text-accent">{t.event}</p>
+                <h3 className="mt-2 text-xl font-bold group-hover:text-accent">{t.title} →</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+      </Section>
+
       <Section label="How I work">
         <div className="grid gap-10 md:grid-cols-3">
           {principles.map((p, i) => (
@@ -106,20 +125,6 @@ function Index() {
             </li>
           ))}
         </ul>
-      </Section>
-
-      <Section label="Speaking">
-        <div className="grid gap-6 md:grid-cols-2">
-          {speaking.map((t) => (
-            <a key={t.href} href={t.href} {...ext} className="group flex flex-col overflow-hidden rounded-lg border bg-card">
-              {t.video && <img src={`https://i.ytimg.com/vi/${t.video}/hqdefault.jpg`} alt={t.title} loading="lazy" className="aspect-video w-full object-cover" />}
-              <div className="p-6">
-                <p className="text-xs font-medium uppercase tracking-wider text-accent">{t.event}</p>
-                <h3 className="mt-2 text-xl font-bold group-hover:text-accent">{t.title} →</h3>
-              </div>
-            </a>
-          ))}
-        </div>
       </Section>
 
       <Section label="Writing">
