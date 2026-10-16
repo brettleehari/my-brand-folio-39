@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import photo from "@/assets/profile.jpg";
-import { profile, primaryLinks, otherLinks, proofStrip, work, principles, timeline, writing } from "@/content/site";
+import { profile, primaryLinks, otherLinks, proofStrip, work, principles, timeline, writing, speaking } from "@/content/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -106,6 +106,20 @@ function Index() {
             </li>
           ))}
         </ul>
+      </Section>
+
+      <Section label="Speaking">
+        <div className="grid gap-6 md:grid-cols-2">
+          {speaking.map((t) => (
+            <a key={t.href} href={t.href} {...ext} className="group flex flex-col overflow-hidden rounded-lg border bg-card">
+              {t.video && <img src={`https://i.ytimg.com/vi/${t.video}/hqdefault.jpg`} alt={t.title} loading="lazy" className="aspect-video w-full object-cover" />}
+              <div className="p-6">
+                <p className="text-xs font-medium uppercase tracking-wider text-accent">{t.event}</p>
+                <h3 className="mt-2 text-xl font-bold group-hover:text-accent">{t.title} →</h3>
+              </div>
+            </a>
+          ))}
+        </div>
       </Section>
 
       <Section label="Writing">
