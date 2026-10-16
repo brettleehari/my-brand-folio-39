@@ -89,3 +89,17 @@ export const writing = [
   { title: "From M×N to MCP: turning a decade of API wrappers into MCP servers", where: "Medium", href: "https://towardsdev.com/from-m-n-to-mcp-how-i-turned-a-decade-of-api-wrappers-into-mcp-servers-75d23c9f3d59" },
   { title: "Latest essay", where: "Substack", href: "https://substack.com/home/post/p-193289853" },
 ];
+
+export const speaking = [
+  {
+    title: "I Spent Two Years Building the Median",
+    event: "AI Engineer",
+    href: "https://www.youtube.com/watch?v=0JZy5AuuQzc&t=380s",
+    video: "0JZy5AuuQzc",
+  },
+  {
+    title: "Speaker at DevFest Chennai",
+    event: "GDG Chennai · Google Developer Groups India",
+    href: "https://www.linkedin.com/posts/gdgindia-gdgchennai-devfest-share-7516372293032488960-Exkr/",
+  },
+];
