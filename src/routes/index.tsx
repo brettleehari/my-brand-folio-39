@@ -35,7 +35,7 @@ function Index() {
 
   return (
     <main className="mx-auto max-w-5xl px-6">
-      <header className="grid items-center gap-10 py-16 md:grid-cols-[1fr_auto] md:py-28">
+      <header className="animate-rise grid items-center gap-10 py-16 md:grid-cols-[1fr_auto] md:py-28">
         <div>
           <p className="text-sm text-muted-foreground">{profile.name} · {profile.location}</p>
           <h1 className="mt-4 text-4xl font-bold leading-[1.05] md:text-6xl">{profile.headline}</h1>
