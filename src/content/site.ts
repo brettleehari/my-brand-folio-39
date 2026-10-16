@@ -98,8 +98,8 @@ export const speaking = [
     video: "0JZy5AuuQzc",
   },
   {
-    title: "Speaker at DevFest Chennai",
-    event: "GDG Chennai · Google Developer Groups India",
+    title: "Opportunities in AI: Personal Observations on the Culture of the Gold Rush in California",
+    event: "GDG Chennai · DevFest",
     href: "https://www.linkedin.com/posts/gdgindia-gdgchennai-devfest-share-7516372293032488960-Exkr/",
   },
 ];
