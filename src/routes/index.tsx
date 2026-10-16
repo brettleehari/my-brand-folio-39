@@ -31,7 +31,7 @@ function Section({ id, label, children }: { id?: string; label: string; children
 function Index() {
   const kinds = ["All", ...Array.from(new Set(timeline.map((t) => t.kind)))];
   const [filter, setFilter] = useState("All");
-  const contactHref = profile.email ? `mailto:${profile.email}` : primaryLinks[0].href;
+  const contactHref = profile.email ? `mailto:${profile.email}` : "https://linkedin.com/in/haripm4ai";
 
   return (
     <main className="mx-auto max-w-5xl px-6">
